@@ -11,7 +11,7 @@ subtitle: >
   ### *New Gatsby Project with Netlify CMS!! **Now impoted this in Stackbit!!***
 
 
-  Let us see the changes effected.
+  Let us see the changes effected. **Gatsby image plugin installed!!**
 
 
   1.  npm install
