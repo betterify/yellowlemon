@@ -47,8 +47,8 @@ module.exports = {
         name: 'yellowcake',
         short_name: 'yellowcake',
         start_url: '/',
-        background_color: '#00C2BD',
-        theme_color: '#00C2BD',
+        background_color: '#663399',
+        theme_color: '#663399',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
@@ -87,7 +87,8 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 800,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
+              backgroundColor: "transparent"
             }
           },
           `gatsby-remark-responsive-iframe`
