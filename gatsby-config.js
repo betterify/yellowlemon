@@ -57,25 +57,35 @@ module.exports = {
     },
 
     // Add static assets before markdown files
+    
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/images`,
-        name: 'images'
-      }
+        name: `pages`,
+        path: `${__dirname}/content/pages/`,
+      },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content`,
-        name: 'pages'
-      }
+        name: `images`,
+        path: `${__dirname}/static/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
     },
 
     // images
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-image`,
+    'gatsby-plugin-sharp',    
     'gatsby-transformer-sharp',
-
+    
     {
       resolve: 'gatsby-transformer-remark',
       options: {
